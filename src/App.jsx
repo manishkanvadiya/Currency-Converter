@@ -84,7 +84,7 @@ function App() {
                 amountDisable
               />
             </div>
-            <div className="flex gap-4">
+            <div className="flex items-center gap-4">
               <button
                 type="submit"
                 className="w-full bg-blue-600 text-white px-4 py-3 rounded-md"
