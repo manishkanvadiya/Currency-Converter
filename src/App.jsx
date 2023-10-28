@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { Input } from "./components";
 import useCurrency from "./hooks/useCurrency";
+import bgImg from "./assets/bg.jpg"
 
 function App() {
   const [amount, setAmount] = useState(0);
   const [from, setFrom] = useState("usd");
   const [to, setTo] = useState("inr");
   const [convertedAmount, setConvertedAmount] = useState(0);
-  const bgImg =
-    "https://img.freepik.com/free-photo/russian-ruble-falls-out-column-coins-against-background-exchange-rate-chart-economic-sanctions-economic-crisis-space-text-idea-banner-news_166373-2656.jpg?w=1060&t=st=1698506546~exp=1698507146~hmac=a1a117abecc37b569d048b3c92410ed5e04e09dedd06fa19696fe71ab9848af3";
+  
   const currencyInfo = useCurrency(from);
 
   const date = currencyInfo.date;
