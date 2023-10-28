@@ -27,6 +27,8 @@ function App() {
     e.preventDefault();
     setAmount("");
     setConvertedAmount("");
+    setFrom("usd");
+    setTo("inr");
   };
 
   return (
